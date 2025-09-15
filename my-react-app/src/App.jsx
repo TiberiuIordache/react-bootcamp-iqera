@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import Hello from './components/Hello'
 import UserCard from './components/UserCard'
-import MyButton from './components/MyButton';
+import LikeButton from './components/LikeButton';
 import Contatore from './components/Contatore';
 
 function App() {
   return (
     <>
       <Hello/>
-      <MyButton/>
+      <LikeButton/>
       <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
         <UserCard name="John" lname="Doe" age="30" email="test@email.it" address="via delle ciliegie" phone="12345566"/>
         <UserCard name="Jane" lname="Smith" age="25" email="test@email.it" address="123 Main St" phone="555-1234"/>
