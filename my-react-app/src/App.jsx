@@ -3,6 +3,8 @@ import UserCard from './components/UserCard'
 import ClickButton from './components/ClickButton';
 import Contatore from './components/Contatore';
 import Car from './components/Car';
+import LoginForm from './components/LoginForm';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       </div>
       <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
         <Car/>
+        <LoginForm/>
+        <ContactForm/>
       </div>
     </>
   )

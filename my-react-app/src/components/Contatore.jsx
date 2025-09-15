@@ -15,8 +15,12 @@ export default function LikeButton() {
 	}, []);
 
 	function handleClick() {
-		setCount(count + 1);
-		setCount(prevCount => prevCount + 1);
+		//setCount(count + 1);
+		setCount((prevCount) => { 
+				console.log('Previous count:', prevCount);
+				return prevCount + 1
+			}
+		);
 		setCount(prevCount => prevCount + 1);
 	}
 
