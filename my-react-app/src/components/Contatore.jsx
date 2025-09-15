@@ -16,8 +16,6 @@ export default function Contatore() {
 
 	return (
 		<div style={{ textAlign: 'center', marginTop: '20px' }}>
-			<h1 style={{ fontSize: '24px', color: '#333' }}>Contatore</h1>
-			<p style={{ fontSize: '18px', color: '#666' }}>Valore: {count}</p>
 			<button 
 				style={{ 
 					padding: '10px 20px', 
@@ -30,7 +28,7 @@ export default function Contatore() {
 				}} 
 				onClick={() => setCount(count + 1)}
 			>
-				Incrementa
+				<span role="img" aria-label="like">👍</span> {count}
 			</button>
 		</div>
 	)
