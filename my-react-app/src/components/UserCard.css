@@ -30,3 +30,8 @@
   font-size: 1.05rem;
   margin: 0;
 }
+.user-card .email {
+  font-size: 0.95rem;
+  color: #64748b;
+  word-break: break-all;
+}
