@@ -9,7 +9,7 @@ const btnStyle = {
     fontSize: '16px',
 };
 
-function LikeButton() {
+function ClickButton() {
     return (
       <>
           <button className="btn" style={btnStyle} onClick={()=>{alert('click')}}>Click Me!</button>
@@ -19,5 +19,5 @@ function LikeButton() {
 }
 
   
-  export default LikeButton
+  export default ClickButton
   

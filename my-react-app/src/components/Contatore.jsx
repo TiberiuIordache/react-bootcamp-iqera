@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 
-export default function Contatore() {
+export default function LikeButton() {
 
 	const [count, setCount] = useState(0)
 
@@ -13,6 +13,12 @@ export default function Contatore() {
 		};
 
 	}, []);
+
+	function handleClick() {
+		setCount(count + 1);
+		setCount(prevCount => prevCount + 1);
+		setCount(prevCount => prevCount + 1);
+	}
 
 	return (
 		<div style={{ textAlign: 'center', marginTop: '20px' }}>
@@ -26,7 +32,7 @@ export default function Contatore() {
 					borderRadius: '5px', 
 					cursor: 'pointer' 
 				}} 
-				onClick={() => setCount(count + 1)}
+				onClick={handleClick}
 			>
 				<span role="img" aria-label="like">👍</span> {count}
 			</button>
