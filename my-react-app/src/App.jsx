@@ -5,6 +5,8 @@ import Contatore from './components/Contatore';
 import Car from './components/Car';
 import LoginForm from './components/LoginForm';
 import ContactForm from './components/ContactForm';
+import AuthPanel from './components/AuthPanel';
+import UserList from './components/UserList';
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
         <Car/>
         <LoginForm/>
         <ContactForm/>
+      </div>
+      <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+        <AuthPanel/>
+        <UserList/>
       </div>
     </>
   )
